@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="productApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>AngularJS 1.5.8</title> 
+        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="libs/bootstrap.css">
+        <script src='libs/angularjs.js'></script>
+        <link href='style.css' rel='stylesheet' />
+    </head>
+    <body ng-controller="ProductListController">
+        <h1>Welcome to my market</h1>
+        <ul>
+            <li ng-repeat="item in items">
+                <h2> {{ item.name }}</h2>
+                <p> {{ item.description }}<p>
+            </li>
+        </ul>
+        <main>
+            <div id="map"></div>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>

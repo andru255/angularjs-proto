@@ -1,0 +1,19 @@
+{
+  "name": "my-angularjs-proto",
+  "version": "1.0.0",
+  "description": "My little market",
+  "main": "app.js",
+  "scripts": {
+    "karma": "karma",
+    "test": "karma start karma.conf.js"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.4.8",
+    "karma": "^4.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5"
+  },
+  "author": "andru255",
+  "license": "ISC"
+}
