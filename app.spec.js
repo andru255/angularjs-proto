@@ -1,9 +1,10 @@
-describe("ProductListController", function() {
+describe("AppProductListController", function() {
     beforeEach(module("productApp"));
 
-    it("should create a `products` model with 2 items", inject(function($controller){
+    it("should have a siteName", inject(function($controller){
         var $scope = {};
-        var ctrl = $controller("ProductListController", {$scope: $scope});
-        expect($scope.items.length).toBe(2);
+        var ctrl = $controller("AppProductListController", {$scope: $scope});
+        expect($scope.siteName).not.toEqual("");
     }));
+
 });

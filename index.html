@@ -9,17 +9,20 @@
         <script src='libs/angularjs.js'></script>
         <link href='style.css' rel='stylesheet' />
     </head>
-    <body ng-controller="ProductListController">
-        <h1>Welcome to my market</h1>
-        <ul>
-            <li ng-repeat="item in items">
-                <h2> {{ item.name }}</h2>
-                <p> {{ item.description }}<p>
-            </li>
-        </ul>
+
+    <body ng-controller="AppProductListController">
+        <h1>Welcome to {{ siteName }}</h1>
+        <greet-user></greet-user>
+        <product-list></product-list>
+
         <main>
             <div id="map"></div>
         </main>
+
         <script src="app.js"></script>
+        <!-- components -->
+        <script src="components/greet-user/greet-user.component.js"></script>
+        <script src="components/product-list/product-list.component.js"></script>
+
     </body>
 </html>

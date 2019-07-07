@@ -2,8 +2,10 @@ var files = [
     'libs/angularjs.js',
     'node_modules/angular-mocks/angular-mocks.js',
     'app.js',
+    'app.spec.js',
+    'components/**/**.component.js',
+    'components/**/**.spec.js'
 ];
-files.push('*.spec.js');
 
 module.exports = function (config) {
     config.set({

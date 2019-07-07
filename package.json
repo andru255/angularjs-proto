@@ -8,7 +8,7 @@
     "test": "karma start karma.conf.js"
   },
   "devDependencies": {
-    "angular-mocks": "1.4.8",
+    "angular-mocks": "1.5.x",
     "karma": "^4.1.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^2.0.1",
