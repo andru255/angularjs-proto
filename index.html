@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html ng-app="productApp">
+<html ng-app="mainApp">
     <head>
         <meta charset="UTF-8">
         <title>AngularJS 1.5.8</title> 
         <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="libs/bootstrap.css">
-        <script src='libs/angularjs.js'></script>
-        <link href='style.css' rel='stylesheet' />
+        <link href='libs/angular-material/angular-material.min.css' rel='stylesheet' />
     </head>
 
-    <body ng-controller="AppProductListController">
+    <body ng-controller="AppProductListController" layout="flow" flex>
         <h1>Welcome to {{ siteName }}</h1>
         <greet-user></greet-user>
-        <product-list></product-list>
+
+        <div class="md-sidenav-left">
+            <product-list></product-list>
+        </div>
 
         <main>
             <div id="map"></div>
         </main>
+
+        <script src='libs/angularjs.js'></script>
+        <script src='libs/angular-material/angular-material.min.js'></script>
 
         <script src="app.js"></script>
         <!-- components -->

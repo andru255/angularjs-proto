@@ -1,6 +1,6 @@
 describe("greetUser", function() {
 
-    beforeEach(module("productApp"));
+    beforeEach(module("mainApp"));
 
     describe("GreetUserController", function() {
         var ctrl;

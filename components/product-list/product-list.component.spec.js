@@ -1,5 +1,5 @@
 describe("productList", function() {
-    beforeEach(module("productApp"));
+    beforeEach(module("mainApp"));
 
     describe("ProductListController", function() {
 
