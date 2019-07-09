@@ -12,12 +12,7 @@
         </md-toolbar>
         <div flex layout="row">
             <md-sidenav flex="15" md-is-locked-open="true" class="md-whiteframe-21">
-                <md-content>
-                    <section layout="column" layout-sm="column">
-                        <md-button class="md-accent">Finder</md-button>
-                        <md-button class="md-accent">Dashboard</md-button>
-                    </section>
-                </md-content>
+                <main-nav></main-nav>
             </md-sidenav>
             <div layout="column" flex>
                 <greet-user></greet-user>
@@ -38,14 +33,17 @@
 
         <!-- main module -->
         <script src="app/app.js"></script>
+        <script src="app/app.routes.js"></script>
         <script src="app/app.config.js"></script>
 
         <!-- shared components -->
         <script src="app/components/greet-user/greet-user.component.js"></script>
+        <script src="app/components/main-nav/main-nav.component.js"></script>
 
         <!-- modules and their components -->
-        <script src="app/product/product.module.js"></script>
-        <script src="app/product/components/product-list/product-list.component.js"></script>
-        <script src="app/product/components/category-list/category-list.component.js"></script>
+        <script src="app/modules/product/product.module.js"></script>
+        <script src="app/modules/product/product.config.js"></script>
+        <script src="app/modules/product/components/product-list/product-list.component.js"></script>
+        <script src="app/modules/product/components/category-list/category-list.component.js"></script>
     </body>
 </html>
