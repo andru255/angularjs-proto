@@ -6,26 +6,44 @@
         <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
         <link href='libs/angular-material/angular-material.min.css' rel='stylesheet' />
     </head>
-
-    <body ng-controller="AppProductListController" layout="flow" flex>
-        <h1>Welcome to {{ siteName }}</h1>
-        <greet-user></greet-user>
-
-        <div class="md-sidenav-left">
-            <product-list></product-list>
+    <body layout="column">
+        <md-toolbar>
+            <h2>Welcome to {{ siteName }}</h2>
+        </md-toolbar>
+        <div flex layout="row">
+            <md-sidenav flex="15" md-is-locked-open="true" class="md-whiteframe-21">
+                <md-content>
+                    <section layout="column" layout-sm="column">
+                        <md-button class="md-accent">Finder</md-button>
+                        <md-button class="md-accent">Dashboard</md-button>
+                    </section>
+                </md-content>
+            </md-sidenav>
+            <div layout="column" flex>
+                <greet-user></greet-user>
+            </div>
         </div>
 
-        <main>
-            <div id="map"></div>
-        </main>
+        <!-- angular base -->
+        <script src='libs/angular/angularjs.js'></script>
+        <script src='node_modules/angular-route/angular-route.min.js'></script>
+        <script src='libs/angular/angular-animate.min.js'></script>
+        <script src='libs/angular/angular-aria.min.js'></script>
+        <script src='libs/angular/angular-messages.min.js'></script>
 
-        <script src='libs/angularjs.js'></script>
+        <!-- material -->
         <script src='libs/angular-material/angular-material.min.js'></script>
 
-        <script src="app.js"></script>
-        <!-- components -->
-        <script src="components/greet-user/greet-user.component.js"></script>
-        <script src="components/product-list/product-list.component.js"></script>
+        <!-- main module -->
+        <script src="app/app.js"></script>
+        <script src="app/app.config.js"></script>
 
+        <!-- shared components -->
+        <script src="app/components/greet-user/greet-user.component.js"></script>
+
+        <!-- modules and their components -->
+        <script src="app/product/product.module.js"></script>
+        <script src="app/product/components/product-list/product-list.component.js"></script>
+        <script src="app/product/components/category-list/category-list.component.js"></script>
     </body>
 </html>
