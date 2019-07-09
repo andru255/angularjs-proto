@@ -10,7 +10,7 @@ app.config(['$locationProvider', '$routeProvider',
         $routeProvider.otherwise({
             templateUrl: "/app/templates/404.template.html",
             controller: ['$rootScope', function ($rootScope) {
-                $rootScope.pageinfo = {title: "Not Found", crumbs: "<i class='fa fa-home'></i> Dashboard,/dashboard"};
+                $rootScope.pageinfo = {title: "Not Found"};
             }],
         });
     }

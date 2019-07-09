@@ -6,6 +6,10 @@ var files = [
     'libs/angular/angular-aria.min.js',
     'libs/angular/angular-messages.min.js',
     'libs/angular-material/angular-material.min.js',
+    'node_modules/dragula/dist/dragula.min.js',
+    'node_modules/angularjs-dragula/dist/angularjs-dragula.min.js',
+    'node_modules/moment/min/moment.min.js',
+    'node_modules/angular-moment/angular-moment.min.js',
     'node_modules/angular-mocks/angular-mocks.js',
 
     // app stuff

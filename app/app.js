@@ -3,5 +3,8 @@ var app = angular.module('mainApp', [
     'ngMaterial',
     'ngMessages',
 
+    angularDragula(angular),
+    'angularMoment',
+
     'productModule'
 ]);

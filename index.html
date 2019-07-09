@@ -5,10 +5,12 @@
         <title>AngularJS 1.5.8</title> 
         <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
         <link href='libs/angular-material/angular-material.min.css' rel='stylesheet' />
+        <link href='node_modules/dragula/dist/dragula.min.css' rel='stylesheet' />
+        <link href='node_modules/angularjs-dragula/dist/dragula.min.css' rel='stylesheet' />
     </head>
     <body layout="column">
         <md-toolbar>
-            <h2>Welcome to {{ siteName }}</h2>
+            <a href="#!/apply">Home</a> | <span>Welcome to {{ siteName }}</span>
         </md-toolbar>
         <div flex layout="row">
             <md-sidenav flex="15" md-is-locked-open="true" class="md-whiteframe-21">
@@ -28,8 +30,12 @@
         <script src='libs/angular/angular-aria.min.js'></script>
         <script src='libs/angular/angular-messages.min.js'></script>
 
-        <!-- material -->
+        <!-- libraries -->
         <script src='libs/angular-material/angular-material.min.js'></script>
+        <script src='node_modules/dragula/dist/dragula.min.js'></script>
+        <script src='node_modules/angularjs-dragula/dist/angularjs-dragula.min.js'></script>
+        <script src='node_modules/moment/min/moment.min.js'></script>
+        <script src='node_modules/angular-moment/angular-moment.min.js'></script>
 
         <!-- main module -->
         <script src="app/app.js"></script>
@@ -42,7 +48,7 @@
 
         <!-- modules and their components -->
         <script src="app/modules/product/product.module.js"></script>
-        <script src="app/modules/product/product.config.js"></script>
+        <script src="app/modules/product/product.path.js"></script>
         <script src="app/modules/product/components/product-list/product-list.component.js"></script>
         <script src="app/modules/product/components/category-list/category-list.component.js"></script>
     </body>

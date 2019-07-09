@@ -19,5 +19,10 @@
     "karma-mocha-reporter": "^2.2.5"
   },
   "author": "andru255",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "angular-moment": "^1.2.0",
+    "angularjs-dragula": "^2.0.0",
+    "dragula": "^3.7.2"
+  }
 }

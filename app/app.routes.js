@@ -1,4 +1,9 @@
 app.routes = {
+    "/apply": {
+        id: "finder",
+        title: "Finder",
+        templateUrl: "app/templates/apply.template.html"
+    },
     "/finder": {
         id: "finder",
         title: "Finder",
