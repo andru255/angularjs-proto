@@ -10,6 +10,9 @@ var files = [
     'node_modules/angularjs-dragula/dist/angularjs-dragula.min.js',
     'node_modules/moment/min/moment.min.js',
     'node_modules/angular-moment/angular-moment.min.js',
+    'node_modules/textangular/dist/textAngular-rangy.min.js',
+    'node_modules/textangular/dist/textAngular-sanitize.min.js',
+    'node_modules/textangular/dist/textAngular.min.js',
     'node_modules/angular-mocks/angular-mocks.js',
 
     // app stuff

@@ -5,6 +5,7 @@ var app = angular.module('mainApp', [
 
     angularDragula(angular),
     'angularMoment',
+    'textAngular',
 
     'productModule'
 ]);
